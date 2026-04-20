@@ -109,10 +109,10 @@ JS PRACTICE SHEET 4 (Functions)
 // greet();
 
 // Q40 How do you call one function inside another?
-let add = (a,b)=>{
-  return a+b;
-}
-let sum = (a,b)=>{
-   return add(a,b);
-}
-console.log(sum(5,6));
+// let add = (a,b)=>{
+//   return a+b;
+// }
+// let sum = (a,b)=>{
+//    return add(a,b);
+// }
+// console.log(sum(5,6));
