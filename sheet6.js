@@ -146,3 +146,4 @@ JS PRACTICE SHEET 6 (Objects)
 // let sum = values.reduce((acc,curr)=>acc+curr,0);
 // let avg = sum / values.length;
 // console.log(avg);
+
