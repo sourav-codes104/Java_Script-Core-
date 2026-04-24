@@ -99,3 +99,109 @@ JS PRACTICE SHEET 7 (Scope & Closures)
 // let ans = outer();
 // ans();
 // ans();
+
+// Q66 How do you create counter using closure?
+
+// function outer(){
+//   let count = 0;
+//   function inner(){
+//     count++;
+//     console.log(count);
+//   }
+//   return inner;
+// }
+
+// let counter = outer();
+// counter();
+// counter();
+
+// Q67 How do you create private variable using closure?
+
+// function outer() {
+//   let count = 0; // private variable
+
+//   return {
+//     increment_method: function () {
+//       count++;
+//     },
+//     decrement_method: function () {
+//       count--;
+//     },
+//     getter: function () {
+//       return count;
+//     },
+//     setter: function (value) {
+//       count = value;
+//     },
+//   };
+// }
+
+// let counter = outer();
+
+// counter.increment_method();
+// console.log(counter.getter());
+// counter.increment_method();
+// console.log(counter.getter());
+// counter.increment_method();
+// console.log(counter.getter());
+// counter.increment_method();
+// console.log(counter.getter());
+// counter.increment_method();
+// console.log(counter.getter());
+// counter.increment_method();
+// console.log(counter.getter());
+// counter.decrement_method();
+// console.log(counter.getter());
+
+// counter.increment_method();
+// console.log(counter.getter());
+// counter.decrement_method();
+// console.log(counter.getter());
+
+// counter.setter(20);
+
+// counter.increment_method();
+// console.log(counter.getter());
+// counter.increment_method();
+// console.log(counter.getter());
+// counter.increment_method();
+// console.log(counter.getter());
+// counter.increment_method();
+// console.log(counter.getter());
+// counter.increment_method();
+// console.log(counter.getter());
+// counter.increment_method();
+// console.log(counter.getter());
+// counter.decrement_method();
+// console.log(counter.getter());
+
+// counter.increment_method();
+// console.log(counter.getter());
+// counter.decrement_method();
+// console.log(counter.getter());
+
+// Q68 How do you create function factory?
+
+// function general_store(discount) {
+//   return function(price){
+//     return price - (price*discount/100);
+//   }
+// }
+
+// let person1 = general_store(20);
+// let person2 = general_store(25);
+
+// console.log(person1(1000));
+// console.log(person2(1000));
+
+// Q69 How do you write IIFE?
+
+// (function(){
+//   console.log("Hy response from IIFE")
+// })();
+
+// Q70 What is output of IIFE example?
+// (function(value){
+//   console.log(value*value);
+// })(5);
+// output is 25
